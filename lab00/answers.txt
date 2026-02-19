@@ -1,4 +1,5 @@
-1. grep -r "keyword" .
-2. ps aux
-3. ctrl-C
-4. diff a b
+1. ls -l
+2. grep -r "keyword" .
+3. ps aux
+4. ctrl-C
+5. diff a b
