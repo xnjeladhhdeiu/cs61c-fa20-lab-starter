@@ -1,8 +1,9 @@
-1. mv path/from path/to
-2. chmod
-3. pwd
-4. ping hostlocationurl
-5. grep -r "keyword" .
-6. ps aux
-7. ctrl-C
-8. diff a b
+1. ls -l
+2. mv path/from path/to
+3. chmod
+4. pwd
+5. ping hostlocationurl
+6. grep -r "keyword" .
+7. ps aux
+8. ctrl-C
+9. diff a b
