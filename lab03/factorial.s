@@ -21,4 +21,14 @@ main:
     ecall # Exit
 
 factorial:
-    # YOUR CODE HERE
+    #prologue 
+    addi t1 a0 0 #copy n into t1
+    addi t2 x0 1 #set accumulator
+    fact:  #loop
+        beq t1 x0 exit
+        mul t2 t2 t1
+        addi t1 t1 -1
+        jal x0 fact
+    exit:
+        addi a0 t2 0
+        ret

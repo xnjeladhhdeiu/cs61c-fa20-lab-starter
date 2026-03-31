@@ -1,0 +1,23 @@
+var k: t0
+var sum: s0
+source: s1
+dest: s2
+the loop: 
+	s3 holds the value of t0 multiplied by 4 to increment the source adress.
+	t1 holds the location in the source array by summing the base adress and s3.
+	t2 holds the value at the t0 location in source array (adress in s1).
+	beq test the loop condition. (k != 0), jumps to exit if true.
+	a0 holds t2 , the arg for the "fun" function.
+	stack pointer gets moved to allocate space in for t0 and t2.
+	both get pushed.
+	"fun" gets called by jumping to it and linking the return adress in ra.
+	t0 and t2 get restored and the sp gets decremented.
+	the return value of "fun" gets writen in t2
+	t3 holds the location in dest array
+	the value of t2 gets writen in dest array.
+	the value sum get incremented by the value of t2.
+	the value of t0 (k) gets incremented by 1.
+	jump to the beginning of the loop without storing the return adress.
+
+So the pointers are adresses that get loaded into registers, copied into temp registers and those get  manipulated aritmeticaly to point to different locations in the array. The start of the array remains stored in the saved registers. 	
+	
