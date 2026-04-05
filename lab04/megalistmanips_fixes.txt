@@ -1,0 +1,6 @@
+1. changed syntax on line 81 to addi a0, s0, 8. The assembler was complaining. The offset syntax is only for lw and sw operations. This way the address gets copied from s0 into a0 with and 8 byte offset.
+2. Changed line 78 to addi t0, t0, 4, so the address gets incremented by the size of a word instead of	 byte...
+3. Changed line 93 to add a1, s1, x0 to copy the address of the mystery function into reg a. The other way was trying to get the value stored at the function address.
+4. changed 93 from add a0, s0, 8 to lw a0, 8(s0); to load the adress at that memory adress.
+ 5. Line 94 changed blt instead of bne.
+6. the loading of the addess of the array was wrong. It copied the address of the node instead of loading the array address.

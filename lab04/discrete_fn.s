@@ -76,9 +76,11 @@ main:
 # a1 is the address of the "output" array (defined above).
 # Think: why might having a1 be useful?
 f:
-    # YOUR CODE GOES HERE!
-
-    jr ra               # Always remember to jr ra after your function!
+    addi t0, a0, 3  # offset the input by three to get the first value be 0, so it can be used to reference the location in the array.
+    slli t0, t0, 2  # multiply by four to acount for bytes
+    add a1, a1, t0  # offset the address by the input value * 4
+    lw a0, 0(a1)
+    jr ra           # Always remember to jr ra after your function!
 
 print_int:
     mv a1, a0
