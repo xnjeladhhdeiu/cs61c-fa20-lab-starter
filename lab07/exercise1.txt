@@ -1,24 +1,25 @@
 Scenario 1
-    1.
-    2.
-    3.
+    1."cache size, step size in bytes"
+    2."0.0"
+    3."step size, 1"
 
 Scenario 2
-    1.
-    2.
-    3.
+    1."32"
+    2."MHHH"
+    3."It aproaches 1.0"
 
 Scenario 3
-    1.
-    2.
-    3.
-    4.
-    5.
+    1. "0.5, 0, 0.5"
+    2. "32, 16"
+    3. "16"
+    4. "increase rep count"
+    5. "=, =, +, ="
 
 --- lines below are ignored by the AG ---
 
-Checkoff Question 1:
-Checkoff Question 2:
-Checkoff Question 3:
-Checkoff Question 4:
-Checkoff Question 5:
+Checkoff Question 1: "it doesn't change the stepsize."
+Checkoff Question 2: "array size, 32B"
+Checkoff Question 3: "0.75 is exactly 1 miss to load the block and 3 consecutive hits that acces the same block afterwards"
+Checkoff Question 4: "Once we've gone through the first rep the whole array is loaded into the $. Every acces is a hit after the first round."
+Checkoff Question 5: "we should acces a subarray and apply all the functions before loading the next subarray into the cache."
+Checkoff Question 6: " The misses in L2 are all compulsory misses. Because the L2 was empty and is accesed only once"
