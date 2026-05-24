@@ -1,19 +1,19 @@
 Exercise 1:
-    1.
-    2.
-    3.
+    1. 32
+    2. 5, 5, 5, 5
+    3. Yes, because the ones that are TLB hits are also page hits? or not...? 
 
 Exercise 2:
-    1.
+    1. 0, 8, 10, 18, 20, 28, 30, 38, 0, 8
 
 Exercise 3:
-    1.
+    1. We can increase the physical memory to match the virtual memory.
 
 --- lines below are ignored by the AG ---
 
 Exercise 1 Checkoff Questions:
-    1.
-    2.
+    1. We look for the virtual address in the TLB. Id not found we look it up inside the page table. If the valid bit is deasserted, the page is on disk. We load the page into the DRAM and set the valid bit in the page table and update the PPN inside the page table.
+    2.Because the VM is twice the size of the PM
 
 Exercise 4 Checkoff Question:
-    1.
+    1. unavailable...
