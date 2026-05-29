@@ -36,6 +36,8 @@ a.out
 *.i*86
 *.x86_64
 *.hex
+=======
+test
 
 # Debug files
 *.dSYM/
@@ -252,3 +254,6 @@ $RECYCLE.BIN/
 # lab13 program
 server_basic server_process
 **/*._sobel.bmp
+=======
+
+files.txt
